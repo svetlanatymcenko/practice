@@ -111,7 +111,7 @@ Status SessionAgregator::getUserRights(std::string &userLogin) {
 }
 
 std::string SessionAgregator::getUserStatusFromCollection(std::string &userLogin) {
-    // Вычленяем статус из коллекции "профиль"
+    // Извлекаем статус из коллекции "профиль" _ изменение Тымченко
     mongocxx::uri uri(Settings::getConnectionAuthString(UserSettingsCnst::ADMIN_LOGIN, UserSettingsCnst::ADMIN_PASSWORD));
     auto client = mongocxx::client(uri);
     mongocxx::v_noabi::database dbasedb = client[DbCnst::NAME];
