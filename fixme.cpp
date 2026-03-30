@@ -125,4 +125,4 @@ bsoncxx::builder::basic::document SessionAgregator::getFilter(std::string userLo
     auto filter = bsoncxx::builder::basic::document{};
     filter.append(kvp(FieldCnst::LOGIN, userLogin.c_str()));
     return filter;
-}
+}//Автор: Тымченко С.А.
